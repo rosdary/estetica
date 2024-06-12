@@ -3,7 +3,7 @@
     padding: unset;
 
     box-sizing: border-box;
-    display: block;
+
 
     font-size: 1rem;
 
@@ -15,4 +15,14 @@
     padding: unset;
     outline: unset;
     border: unset;
+}
+
+.navbar__nav {
+
+    display: flex;
+    
+}
+
+.navbar__nav__list {
+    display: flex;
 }
