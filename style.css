@@ -19,12 +19,26 @@
 
 .navbar__nav {
 
-    display: flex;
-    align-items: center;
+    display: flex; /*es el autolayout de style*/
+    align-items: center; /*redimenciona*/
     justify-content: space-between;
+    padding: 15px 60px; /*espaciado lateral*/
     
 }
 
 .navbar__nav__list {
-    display: flex;
+    display: flex; /*redimenciona a columnas*/
+    gap: 35px;
 }
+
+.main__section.jumbotron h1 {
+    font-size: 64px; /*tamaño de la letra*/
+    font-weight: bold; /*ancho de la letra*/
+}
+
+.main__section.jumbotron h1 span {
+    font-size: 64px;
+    font-weight: bold;
+    color: #307373;
+}
+
