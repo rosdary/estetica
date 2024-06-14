@@ -44,6 +44,7 @@
     background-position: 30vw -200px;
     background-repeat: ; */
     background-color: #C4CBD3;
+    line-height: 100%;
 }
 .main__section.jumbotron h1 {
     font-size: 64px; /*tamaño de la letra*/
@@ -62,6 +63,32 @@
     justify-content: center;
 }
 
+
+.main__section__tarjeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 7px;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.main__section__tarjeta__oscura {
+    padding: 12px;
+    background-color: #2C4D54;
+    color: #f2f2f2;
+
+
+}
+
+.main__section__tarjeta__clara {
+
+    background-color:#307373 ;
+    color: #f2f2f2;
+}
+
+.main__section__tarjeta
+
 .main__section__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -78,7 +105,15 @@
     text-align: center;
 }
 
-.main__section__container__card >img {
-    height: 60px;
+.main__section__container__card >img src {
+    height: 25px;
+    
+    
+    }
+.main__section__container__card__vector {
+    
+    /*modificar lo q falta*/
+    display: flex;
+    gap: 50px;
 
-}
+    }
