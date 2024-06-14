@@ -1,20 +1,18 @@
 *{
-    margin: unset;
-    padding: unset;
+    margin: unset; /*estos comandos son para limpiar la pagina antes de empezar a trabajar*/
+    padding: unset;/*reestablece los px*/
+    outline: unset; /*elimina lineas negras de los cuadros*/
+    border: unset; /*elimina bordes*/
 
     box-sizing: border-box;
+    display: block;
 
+    font-size: 1rem; /* 1ren vale 16px */
 
-    font-size: 1rem;
-
-    font-weight: 400;
+    font-weight: 400; /*ancho de pagina*/
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    margin: unset;
-    padding: unset;
-    outline: unset;
-    border: unset;
 }
 
 .navbar__nav {
@@ -42,3 +40,23 @@
     color: #307373;
 }
 
+.main__section__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    padding: 15px 60px;
+    
+}
+
+.main__section__container__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+}
+
+.main__section__container__card >img {
+    height: 60px;
+
+}
