@@ -5,13 +5,14 @@
     border: unset; /*elimina bordes*/
 
     box-sizing: border-box; /*hace q se adapte a su contenedor*/
-    display: block;
+    /* display: block; */
 
     font-size: 1rem; /* 1ren vale 16px */
 
     font-weight: 400; /*ancho de pagina*/
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
 
 }
 
@@ -29,15 +30,36 @@
     gap: 35px;
 }
 
+.main__section.jumbotron {
+
+    display: flex;
+    font-style: oblique;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #C4CBD3;
+    /* background-image: url(/assets/Rectangle\ 3.jpg);
+    background-size: 100%;
+    background-position: 30vw -200px;
+    background-repeat: ; */
+    background-color: #C4CBD3;
+}
 .main__section.jumbotron h1 {
     font-size: 64px; /*tamaño de la letra*/
     font-weight: bold; /*ancho de la letra*/
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    
 }
 
 .main__section.jumbotron h1 span {
     font-size: 64px;
     font-weight: bold;
     color: #307373;
+    align-items: center;
+    justify-content: center;
 }
 
 .main__section__container {
