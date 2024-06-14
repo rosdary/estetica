@@ -1,10 +1,10 @@
 *{
     margin: unset; /*estos comandos son para limpiar la pagina antes de empezar a trabajar*/
-    padding: unset;/*reestablece los px*/
+    padding: unset;/*reestablece los espaciados de los lados arriba y abajo*/
     outline: unset; /*elimina lineas negras de los cuadros*/
     border: unset; /*elimina bordes*/
 
-    box-sizing: border-box;
+    box-sizing: border-box; /*hace q se adapte a su contenedor*/
     display: block;
 
     font-size: 1rem; /* 1ren vale 16px */
@@ -43,15 +43,15 @@
 .main__section__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 12px;
-    padding: 15px 60px;
+    gap: 12px; /*tamaño de fuente*/
+    padding: 15px 60px; /*espaciado arriba y abajo*/
     
 }
 
 .main__section__container__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* redimenciona los flex direction*/
     padding: 12px;
     text-align: center;
 }
