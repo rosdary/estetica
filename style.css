@@ -1,15 +1,22 @@
-*{
-    margin: unset; /*estos comandos son para limpiar la pagina antes de empezar a trabajar*/
-    padding: unset;/*reestablece los espaciados de los lados arriba y abajo*/
-    outline: unset; /*elimina lineas negras de los cuadros*/
-    border: unset; /*elimina bordes*/
+* {
+    margin: unset;
+    /*estos comandos son para limpiar la pagina antes de empezar a trabajar*/
+    padding: unset;
+    /*reestablece los espaciados de los lados arriba y abajo*/
+    outline: unset;
+    /*elimina lineas negras de los cuadros*/
+    border: unset;
+    /*elimina bordes*/
 
-    box-sizing: border-box; /*hace q se adapte a su contenedor*/
+    box-sizing: border-box;
+    /*hace q se adapte a su contenedor*/
     /* display: block; */
 
-    font-size: 1rem; /* 1ren vale 16px */
+    font-size: 1rem;
+    /* 1ren vale 16px */
 
-    font-weight: 400; /*ancho de pagina*/
+    font-weight: 400;
+    /*ancho de pagina*/
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
@@ -20,24 +27,31 @@
 .navbar__nav {
     background-color: #f2f2f2;
     position: sticky;
-    top: 0; /*pegado arriba*/
-    left: 0; /*pegado a los lados*/
+    top: 0;
+    /*pegado arriba*/
+    left: 0;
+    /*pegado a los lados*/
     width: 100%;
-z-index: 10000; /*barra fija*/
+    z-index: 10000;
+    /*barra fija*/
 }
 
 
 .navbar__nav {
 
-    display: flex; /*es el autolayout de style*/
-    align-items: center; /*redimenciona*/
+    display: flex;
+    /*es el autolayout de style*/
+    align-items: center;
+    /*redimenciona*/
     justify-content: space-between;
-    padding: 15px 60px; /*espaciado lateral*/
-    
+    padding: 15px 60px;
+    /*espaciado lateral*/
+
 }
 
 .navbar__nav__list {
-    display: flex; /*redimenciona a columnas*/
+    display: flex;
+    /*redimenciona a columnas*/
     gap: 35px;
 }
 
@@ -57,13 +71,16 @@ z-index: 10000; /*barra fija*/
     background-color: #C4CBD3;
     line-height: 100%;
 }
+
 .main__section.jumbotron h1 {
-    font-size: 64px; /*tamaño de la letra*/
-    font-weight: bold; /*ancho de la letra*/
+    font-size: 64px;
+    /*tamaño de la letra*/
+    font-weight: bold;
+    /*ancho de la letra*/
     align-items: center;
     justify-content: center;
     color: aliceblue;
-    
+
 }
 
 .main__section.jumbotron h1 span {
@@ -76,7 +93,7 @@ z-index: 10000; /*barra fija*/
 
 
 .main__section__tarjeta {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 7px;
     padding: 12px;
@@ -84,7 +101,8 @@ z-index: 10000; /*barra fija*/
 
 }
 
-.main__section__tarjeta.hover { /*elemento interactivo d la tarjeta con sombra*/
+.main__section__tarjeta.hover {
+    /*elemento interactivo d la tarjeta con sombra*/
     transform: translateZ(10px);
     box-shadow: 2px 2px 10px 1px #2c4d5460;
 }
@@ -94,49 +112,82 @@ z-index: 10000; /*barra fija*/
     background-color: #2C4D54;
     color: #f2f2f2;
     transition: transform .3s ease-in-out;
-    box-shadow: ease-in-out ; /*movimiento tarjeta*/
+    box-shadow: ease-in-out;
+    /*movimiento tarjeta*/
 
 }
 
 .main__section__tarjeta__clara {
 
-    background-color:#307373 ;
+    background-color: #307373;
     color: #f2f2f2;
 }
+
+.main__section h4 span {
+    /*servicio-modificado*/
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C4D54;
+    align-items: center;
+    justify-content: center
+}
+
+/*tarjetas de servicios*/
 
 .main__section__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 12px; /*tamaño de fuente*/
-    padding: 15px 60px; /*espaciado arriba y abajo*/
-    
+    gap: 12px;
+    /*tamaño de fuente*/
+    padding: 15px 60px;
+    /*espaciado arriba y abajo*/
+
+}
+
+.main__section__container__card {
+  display: flex;  
+  margin: 5px;
+  background: #f2f2f2;
+  overflow: hidden;/*pendiente es para ocultar lo q sobre salga de la caja*/
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.11);/*sombra*/
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.main__section__container__card.hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%) /*se traslada verticalmente cuando paso el cursor */
+
+}
+.main__section__container__card h3 span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #307373;
+    align-items: center;
+    justify-content: center
 }
 
 .main__section__container__card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* redimenciona los flex direction*/
+    align-items: center;
+    /* redimenciona los flex direction*/
     padding: 12px;
     text-align: center;
 }
 
-.main__section h4 span { /*servicio-modificado*/
-    font-size: 32px;
-    font-weight: bold;
-    color: #2C4D54;
-    align-items: center;
-    justify-content: center   
+
+.main__section__container__card>img src {
+    height: 25px;
+
+
 }
 
-.main__section__container__card >img src {
-    height: 25px;
-    
-    
-    }
 .main__section__container__card__vector {
-    
+
     /*modificar lo q falta*/
     display: flex;
     gap: 50px;
+    padding: 2px;
+}
 
-    }
