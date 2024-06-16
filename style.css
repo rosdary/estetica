@@ -93,7 +93,8 @@ z-index: 10000; /*barra fija*/
     padding: 12px;
     background-color: #2C4D54;
     color: #f2f2f2;
-transition: transform .3s ease-in-out, box-shadow: ease-in-out ; /*movimiento tarjeta*/
+    transition: transform .3s ease-in-out;
+    box-shadow: ease-in-out ; /*movimiento tarjeta*/
 
 }
 
@@ -117,6 +118,14 @@ transition: transform .3s ease-in-out, box-shadow: ease-in-out ; /*movimiento ta
     align-items: center; /* redimenciona los flex direction*/
     padding: 12px;
     text-align: center;
+}
+
+.main__section h4 span { /*servicio-modificado*/
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C4D54;
+    align-items: center;
+    justify-content: center   
 }
 
 .main__section__container__card >img src {
