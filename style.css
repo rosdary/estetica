@@ -216,6 +216,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: linear-gradient (rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/assets/masaje\ piedras.jpg);
     background-size: 100%;
     background-position: 30vw -200px;
@@ -256,3 +257,9 @@
 }
 
 /*terminal de suscripcion*/
+
+/*footer*/
+
+.footer {
+    
+}
