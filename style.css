@@ -65,7 +65,7 @@
 }
 
 .button-other:hover {
-background-color: #3073739a;
+    background-color: #3073739a;
 }
 
 .main__section.jumbotron {
@@ -149,7 +149,7 @@ background-color: #3073739a;
 
 .main__section__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 12px;
     /*tamaño de fuente*/
     padding: 15px 60px;
@@ -215,82 +215,107 @@ background-color: #3073739a;
     transition: background 3s ease-in;
     color: #f2f2f2;
 }
+
 .button:hover {
-background-color: #307373ad;
+    background-color: #307373ad;
 }
 
 /*otra seccion informativa*/
 .main__section__informativa {
 
-    display: flex;
     font-style: oblique;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient (rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/assets/masaje\ piedras.jpg);
-    background-size: 100%;
-    background-position: 30vw -200px;
+    background-image: url('/assets/masaje_piedras.jpg');
+    background-size: cover;
+    /* background-position: 30vw -200px; */
     background-repeat: no-repeat;
+    background-position: center;
     line-height: 100%;
+    padding: 30px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.main__section__informativa::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.623);
+    z-index: 1;
 }
 
 .main__section__informativa h3 {
     font-size: 16px;
     /*tamaño de la letra*/
     font-weight: bold;
-    color:#f2f2f2 ;
+    color: #2C4D54;
     display: flex;
 
 }
+
 .main__section__informativa p {
     font-size: 12px;
     /*tamaño de la letra*/
     font-weight: lighter;
-    color:#f2f2f2 ;
+    color: #2C4D54;
     display: flex;
 
 }
+
 .main__section__informativa__1 {
+    z-index: 5;
+    position: relative;
     align-items: start;
     justify-content: flex-start;
     display: flex;
+    flex-direction: column;
 
 }
 
 .main__section__informativa__2 {
+    z-index: 5;
+    position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 
 }
 
 .main__section__informativa__3 {
+    z-index: 5;
+    position: relative;
     align-items: end;
     justify-content: end;
     display: flex;
+    flex-direction: column;
 
 }
 
 /*terminal de suscripcion*/
 
 .main__section__suscripcion {
-position: relative;
-width: 100%;
-background: #2C4D54;
-min-height: 100px; /*contenedor de altura*/
-padding: 20px 50px ;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+    position: relative;
+    width: 100%;
+    background: #2C4D54;
+    min-height: 100px;
+    /*contenedor de altura*/
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main__section__suscripcion h3 {
     font-size: 20px;
     /*tamaño de la letra*/
     font-weight: bold;
-    color:#f2f2f2 ;
+    color: #f2f2f2;
     display: flex;
 }
 
@@ -301,30 +326,33 @@ flex-direction: column;
     transition: background .3s ease-in;
     color: #2C4D54;
 }
+
 .button-claro:hover {
-background-color: #c4cbd3ea;
-color: #2C4D54;
+    background-color: #c4cbd3ea;
+    color: #2C4D54;
 }
 
 .main__section__suscripcion h4 {
     font-size: 32px;
     /*tamaño de la letra*/
     font-weight: bold;
-    color:#f2f2f2 ;
+    color: #f2f2f2;
     display: flex;
 }
+
 /*footer*/
 
 .footer {
-position: relative;
-width: 100%;
-background: #f2f2f2;
-min-height: 100px; /*contenedor de altura*/
-padding: 20px 50px ;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column; 
+    position: relative;
+    width: 100%;
+    background: #f2f2f2;
+    min-height: 100px;
+    /*contenedor de altura*/
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer__hijo {
@@ -332,12 +360,12 @@ flex-direction: column;
     font-weight: lighter;
     color: #1f1f1f;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     display: flex;
 }
 
 .footer__hijo span {
-    font-size:12px ;
+    font-size: 12px;
     font-weight: bold;
     color: #1f1f1f;
     align-items: center;
