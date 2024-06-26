@@ -135,6 +135,9 @@
     background-color: #307373;
     color: #f2f2f2;
 }
+h4 {
+    text-align: center;
+}
 
 .main__section h4 span {
     /*servicio-modificado*/
