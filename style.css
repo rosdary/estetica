@@ -24,7 +24,7 @@
 }
 
 /*panel fijo*/
-.navbar__nav {
+.navbar {
     background-color: #f2f2f2;
     position: sticky;
     top: 0;
@@ -55,17 +55,19 @@
     gap: 35px;
 }
 
-.button-other {
+.other {
     padding: 12px 30px;
     background-color: #307373;
     font-weight: bold;
     border: solid 2px #1b4e4ede;
     transition: background 3s ease-in;
     color: #f2f2f2;
+
 }
 
-.button-other:hover {
+.other:hover {
     background-color: #3073739a;
+
 }
 
 .main__section.jumbotron {
@@ -240,7 +242,7 @@ h4 {
     gap: 60px;
 }
 
-.main__section__informativa::after {
+.main__section__informativa:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -322,7 +324,7 @@ h4 {
     display: flex;
 }
 
-.button-claro {
+ .claro {
     padding: 12px 30px;
     background-color: #f2f2f2;
     font-weight: bold;
@@ -330,7 +332,7 @@ h4 {
     color: #2C4D54;
 }
 
-.button-claro:hover {
+.claro:hover {
     background-color: #c4cbd3ea;
     color: #2C4D54;
 }
@@ -352,10 +354,8 @@ h4 {
     min-height: 100px;
     /*contenedor de altura*/
     padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
+
 }
 
 .footer__hijo {
@@ -364,17 +364,27 @@ h4 {
     color: #1f1f1f;
     align-items: center;
     justify-content: center;
-    display: flex;
+    text-align: center;
+    line-height: 1.5;
 }
-
-.footer__hijo span {
+.footer__hijo h4 span {
     font-size: 12px;
     font-weight: bold;
     color: #1f1f1f;
     align-items: center;
     justify-content: center;
-    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 10px;
+}
+.footer__hijo2 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #1f1f1f;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  
 }
 
 .footer__hijo__img {
@@ -383,6 +393,7 @@ h4 {
     display: inline-block;
     margin: 0 10px;
     transition: 0.5s;
+    padding: 10px ;
 }
 
 .footer__hijo__img.hover {
