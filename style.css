@@ -59,21 +59,20 @@
     padding: 12px 30px;
     background-color: #307373;
     font-weight: bold;
-    border: solid 2px #1b4e4ede;
-    transition: background 3s ease-in;
+    transition: background .3s ease-in;
     color: #f2f2f2;
-
+    
 }
 
 .other:hover {
-    background-color: #3073739a;
+    background-color: #307373d8;
 
 }
 
 .main__section.jumbotron {
 
     display: flex;
-    font-style: oblique;
+    font-style: normal;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -116,7 +115,7 @@
 
 }
 
-.main__section__tarjeta.hover {
+.main__section__tarjeta:hover {
     /*elemento interactivo d la tarjeta con sombra*/
     transform: translateZ(10px);
     box-shadow: 2px 2px 10px 1px #2c4d5460;
@@ -174,7 +173,7 @@ h4 {
     transition: all 400ms ease;
 }
 
-.main__section__container__card.hover {
+.main__section__container__card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-2%)
         /*se traslada verticalmente cuando paso el cursor */
@@ -194,7 +193,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     /* redimenciona los flex direction*/
-    padding: 12px;
+    padding: 12px 5px;
     text-align: center;
 }
 
@@ -210,28 +209,27 @@ h4 {
     /*modificar lo q falta*/
     display: flex;
     gap: 50px;
-    padding: 2px;
+    padding: 2px 2px;
 }
 
 .button {
     padding: 12px 30px;
     background-color: #307373;
     font-weight: bold;
-    transition: background 3s ease-in;
+    transition: background .3s ease-in;
     color: #f2f2f2;
 }
 
 .button:hover {
-    background-color: #307373ad;
+    background-color: #307373cc;
 }
 
 /*otra seccion informativa*/
 .main__section__informativa {
 
-    font-style: oblique;
+    font-style: normal;
     background-image: url('/assets/masaje_piedras.jpg');
     background-size: cover;
-    /* background-position: 30vw -200px; */
     background-repeat: no-repeat;
     background-position: center;
     line-height: 100%;
@@ -240,6 +238,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 60px;
+
 }
 
 .main__section__informativa:after {
@@ -249,7 +248,7 @@ h4 {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: rgba(255, 255, 255, 0.295);
     z-index: 1;
 }
 
@@ -259,15 +258,22 @@ h4 {
     font-weight: bold;
     color: #2C4D54;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
 
 }
 
 .main__section__informativa p {
     font-size: 12px;
     /*tamaño de la letra*/
-    font-weight: lighter;
+    font-weight: bold;
     color: #2C4D54;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -304,6 +310,7 @@ h4 {
 /*terminal de suscripcion*/
 
 .main__section__suscripcion {
+    margin-top: 20px;
     position: relative;
     width: 100%;
     background: #2C4D54;
@@ -330,10 +337,11 @@ h4 {
     font-weight: bold;
     transition: background .3s ease-in;
     color: #2C4D54;
+    
 }
 
 .claro:hover {
-    background-color: #c4cbd3ea;
+    background-color: #c4cbd3f3;
     color: #2C4D54;
 }
 
@@ -345,7 +353,7 @@ h4 {
     display: flex;
 }
 
-/*footer*/
+/*footer*/ /*todo lo de aqui para abajo listo*/
 
 .footer {
     position: relative;
