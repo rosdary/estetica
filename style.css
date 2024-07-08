@@ -309,7 +309,7 @@ h4 {
 
 /*terminal de suscripcion*/
 
-.main__section__suscripcion {
+.suscripcion {
     margin-top: 20px;
     position: relative;
     width: 100%;
@@ -323,29 +323,33 @@ h4 {
     flex-direction: column;
 }
 
-.main__section__suscripcion h3 {
+.suscripcion h3 {
     font-size: 20px;
     /*tamaño de la letra*/
     font-weight: bold;
     color: #f2f2f2;
     display: flex;
 }
+.suscripcion__campo {
 
+    padding: 12px 30px;   
+    
+}
  .claro {
     padding: 12px 30px;
-    background-color: #f2f2f2;
+    background-color: #307373;
     font-weight: bold;
     transition: background .3s ease-in;
-    color: #2C4D54;
-    
+    color: #f1f1f1;
+       
 }
 
 .claro:hover {
-    background-color: #c4cbd3f3;
-    color: #2C4D54;
+    background-color: #307373c5;
+    color: #f1f1f1;
 }
 
-.main__section__suscripcion h4 {
+.suscripcion h4 {
     font-size: 32px;
     /*tamaño de la letra*/
     font-weight: bold;
